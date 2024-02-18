@@ -1,0 +1,1 @@
+try catch is made for handeling runtime error it is not handel the parse time error like syntax mistakes 

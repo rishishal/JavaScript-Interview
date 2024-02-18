@@ -1,0 +1,1 @@
+function programing questions are (Curryng, all polyfills, clousers )
