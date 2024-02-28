@@ -10,13 +10,13 @@ function binary(x) {
   return x.toString(2);
 }
 
-const output = arr.map(binary); // change fun logic name
+const output = arr.map(double); // change fun logic name
 
 console.log(output);
 
 const users = [
   { firstname: "Rishi", lastname: "Kumar", age: 21 },
-  { firstname: "Drishti", lastname: "Rana", age: 21 },
+  { firstname: "karina", lastname: "kapoor", age: 21 },
   { firstname: "Priyanshu", lastname: "Kumar", age: 50 },
   { firstname: "kshitij", lastname: "sharawat", age: 32 },
 ];
@@ -27,14 +27,15 @@ const printName = users.map((user) => {
   return `${user.firstname} ${user.lastname}`;
 });
 
-console.log(printName[1]);
+console.log(printName[0]);
 
 // ******************************* Polyfil of Map **************************************//
 
 Array.prototype.myMap = function (cb) {
-  let res = [];
-  for (let index = 0; index < this.length; index++) {
-    res.push(cb(this[index], index, this));
+  const res = [];
+  console.log(this);
+  for (let i = 0; i < this.length; i++) {
+    res.push(cb(this[i]));
   }
   return res;
 };
@@ -43,4 +44,4 @@ const printName2 = users.myMap((user) => {
   return `${user.firstname} ${user.lastname}`;
 });
 
-console.log(printName2[0]);
+console.log(printName2);

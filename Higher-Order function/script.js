@@ -1,5 +1,5 @@
 // Q what is a callback?
-// Ans : A callback function is a function passed into another function as an argument and call it later in code is called callback functions
+// Ans : A callback function is a function passed into another function as an argument, and call it later in code is called callback functions
 
 function x() {
   console.log("callback");
@@ -15,7 +15,7 @@ const radius = [3, 1, 2, 4];
 
 // area = πr2
 // circumfrence = 2πr
-// diameter = r2
+// diameter = 2r
 
 function area(radius) {
   return Math.PI * radius * radius;
@@ -43,3 +43,22 @@ console.log("Diameter", calculate(diameter, radius));
 
 // using map for Area
 // console.log("Map", radius.map(area));
+
+// const area = function () {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(Math.PI * radius[i] * radius[i]);
+//   }
+//   console.log(output);
+// };
+
+// area();
+
+// const circumfrence = function () {
+//   const output = [];
+//   for (let i = 0; i < radius.length; i++) {
+//     output.push(2 * Math.PI * radius[i]);
+//   }
+//   console.log(output);
+// };
+// circumfrence();
