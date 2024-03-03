@@ -20,7 +20,7 @@ obj2.__proto__ = obj; // Now obj2 has a value of obj Object
 console.log(obj2.city);
 console.log(obj2.getintro());
 
-//Good way of write Prototype
+//Good way of writing Prototype
 Function.prototype.myBind = function () {
   console.log("Hello Bro");
 };
