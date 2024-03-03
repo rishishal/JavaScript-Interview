@@ -1,5 +1,17 @@
 //call
 
+// let student1 = {
+//   firstname: "Rishi",
+//   lastname: "kumar",
+//   printName: function (hometown, state) {
+//     console.log(
+//       `${this.firstname} ${this.lastname} from  ${hometown} ${state}`
+//     );
+//   },
+// };
+
+// student1.printName("Bihar", "Delhi");
+
 let student1 = {
   firstname: "Rishi",
   lastname: "kumar",
@@ -9,12 +21,12 @@ let printName = function (hometown, state) {
   console.log(`${this.firstname} ${this.lastname} from  ${hometown} ${state}`);
 };
 
-printName.call(student1, "Bihar", "Delhi");
-
 let student2 = {
   firstname: "Drishti",
   lastname: "Rana",
 };
+
+printName.call(student2, "Bihar", "Delhi");
 
 //*************** PolyFill of call **************//
 

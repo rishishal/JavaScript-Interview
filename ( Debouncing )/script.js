@@ -18,8 +18,8 @@ const debounce = (fn, delay) => {
 
 const betterFunction = debounce(getData, 300);
 
-// document.querySelector("input").addEventListener("keyup", betterFunction);
+document.querySelector("input").addEventListener("keyup", betterFunction);
 
 // This is the normal Function without Debouncing
 //Check the console for the difference between the calls of Normal Function and the Debouncing Function
-document.querySelector("input").addEventListener("keyup", getData);
+// document.querySelector("input").addEventListener("keyup", getData);

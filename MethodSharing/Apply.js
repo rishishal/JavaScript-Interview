@@ -15,7 +15,8 @@ let printName = function (hometown, state) {
   console.log(`${this.firstname} ${this.lastname} from  ${hometown} ${state}`);
 };
 
-printName.apply(student1, detail1);
+printName.apply(student1, ["Bihar", "Delhi"]);
+printName.apply(student2, detail2);
 
 //*************** PolyFill of Appy **************//
 
@@ -32,4 +33,4 @@ Function.prototype.myAppy = function (obj = {}, ...args) {
   obj.fn(...args);
 };
 
-printName.myAppy(student2, detail2);
+// printName.myAppy(student2, detail2);
