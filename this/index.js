@@ -7,12 +7,12 @@ function x() {
   //but the value depends on strict or non-strict mode
   console.log(this); // this will undefined
 }
-// why this is happen in the javaScript have a(iii)(this substition) in this, the value of "this" will replaced if the
+// why this is happen in the javaScript have a **(iii)(this substition)** in this, the value of "this" will replaced if the
 //"this" is undefined/null into globle object in non-strict mode
 
 //(iv) this keyword depends on how the function is called
 x(); // undefined "stcict"
-window.x(); // window object "strict"
+window.x(); // calling function by passing window object refrence "Print window object in both **Strict or non strict"
 
 //(v) this inside a object's method
 const obj = {
@@ -54,10 +54,10 @@ const object2 = {
 
 object2.x();
 
-//(vii) this inside DOM
+// (vii) this inside DOM
 
-//check index.html
+// check index.html
 // then you write the this inside the DOM this will be printed the [object dom lement]
 // in case button this will print [object HTML<Button Element>]
 
-//(viii) this keyword inside a class, constructor
+// (viii) this keyword inside a class, constructor
